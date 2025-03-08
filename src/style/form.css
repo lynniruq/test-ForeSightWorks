@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle,#4787c6 20%,#091d30 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+h1{
+  color: #091d30;
+}
+
+form {
+  background: linear-gradient(135deg,rgb(255,255,255,0.1),rgb(255,255,255,0.05));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(255,255,255,0.2);
+  box-shadow: 0 4px 10px rgb(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+label {
+  text-align: start;
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #091d30;
+}
+
+input, select {
+  background: transparent;
+  padding: 8px;
+  margin-top: 5px;
+  border:1px solid #f1f1f1;
+  border-radius: 6px;
+  transition: 0.3 ease-in-out;
+  display: block;
+}
+input:hover{
+  border:1px solid #091d30;
+}
+
+button {
+  width: 100%;
+  background-color: #091d30;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown styles */
+.select-container {
+  position: relative;
+  width: 100%;
+}
+
+.select-box {
+  color: #ccc;
+  border:1px solid #f1f1f1;;
+  padding: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.select-dropdown {
+  position: absolute;
+  border: 1px solid #ccc;
+  width: 100%;
+  background: white;
+  z-index: 10;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.select-dropdown input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.select-dropdown div {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.select-dropdown div:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style for checkboxes in dropdown */
+.select-dropdown input[type="checkbox"] {
+  margin-right: 5px;
+}
